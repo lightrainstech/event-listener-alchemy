@@ -1,0 +1,34 @@
+{
+  "name": "api-ms",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js | pino-colada",
+    "dev": "./node_modules/nodemon/bin/nodemon.js ./src/server.js | pino-colada",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "",
+    "postversion": "git push && git push --tags"
+  },
+  "author": "niksmac <niksmac@lightrains.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "4.0.0",
+    "@fastify/cors": "7.0.0",
+    "@fastify/etag": "3.0.0",
+    "@fastify/jwt": "5.0.0",
+    "dotenv": "^16.0.1",
+    "ethers": "^5.6.9",
+    "fastify": "^3.29.0",
+    "fastify-mongodb": "^4.2.0",
+    "fastify-plugin": "^4.0.0",
+    "lodash": "^4.17.21",
+    "path": "^0.12.7",
+    "pino-colada": "^2.2.2",
+    "v8-compile-cache": "^2.3.0",
+    "web3": "^1.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
